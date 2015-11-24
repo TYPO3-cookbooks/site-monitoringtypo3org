@@ -23,6 +23,21 @@ Currently only a minimal recipe that includes all the old clutter.
 #>
 =end
 
-include_recipe "t3-zabbix::default"
-include_recipe "t3-zabbix::server"
-include_recipe "t3-zabbix::partition"
+apt_repository "zabbix" do
+  uri "http://repo.zabbix.com/zabbix/2.4/debian/"
+  components ['main']
+  distribution "wheezy"
+  key "http://repo.zabbix.com/zabbix-official-repo.key"
+end
+
+package "zabbix-server-mysql"
+package "zabbix-frontend-php"
+
+service "apache2" do
+  supports :status => true, :restart => true, :reload => true
+end
+
+file "/etc/php5/conf.d/30-timezone.ini" do
+  content "date.timezone = Europe/Berlin"
+  notifies :reload, "service[apache2]"
+end
