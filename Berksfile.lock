@@ -100,7 +100,7 @@ GRAPH
   runit (1.7.6)
     packagecloud (>= 0.0.0)
   screen (0.7.0)
-  site-monitoringtypo3org (1.0.3)
+  site-monitoringtypo3org (1.0.4)
     database (= 1.3.12)
     site-statustypo3org (~> 0.0.1)
     t3-base (~> 0.2.0)
