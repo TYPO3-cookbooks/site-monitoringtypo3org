@@ -28,3 +28,5 @@ include_recipe "t3-base"
 include_recipe "t3-zabbix::default"
 include_recipe "t3-zabbix::server"
 include_recipe "t3-zabbix::partition"
+
+include_recipe "site-statustypo3org"
