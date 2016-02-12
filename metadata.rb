@@ -5,5 +5,9 @@ license          "Apache 2.0"
 description      "Installs/configures site-monitoringtypo3org"
 version          "1.0.1"
 
+depends          "t3-base",   "~> 0.2.0"
+
 depends          "t3-zabbix", "~> 0.2.0"
+depends          "t3-mysql",  "~> 0.1.0"
+
 depends          "database",  "= 1.3.12"

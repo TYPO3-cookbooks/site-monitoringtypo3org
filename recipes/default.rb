@@ -23,6 +23,8 @@ Currently only a minimal recipe that includes all the old clutter.
 #>
 =end
 
+include_recipe "t3-base"
+
 include_recipe "t3-zabbix::default"
 include_recipe "t3-zabbix::server"
 include_recipe "t3-zabbix::partition"
