@@ -28,7 +28,7 @@ include_recipe "t3-base"
 include_recipe "t3-mysql::server"
 include_recipe "t3-mysql::backup"
 
-include_recipe "t3-zabbix::default"
+include_recipe "zabbix::default"
 include_recipe "t3-zabbix::server"
 include_recipe "t3-zabbix::partition"
 
