@@ -7,8 +7,8 @@ version          IO.read(File.join(File.dirname(__FILE__), 'VERSION')) rescue '0
 
 depends          "t3-base",   "~> 0.2.66"
 
-depends          "t3-zabbix", "~> 1.0.0"
-depends          "t3-mysql",  "~> 0.1.0"
+depends          "t3-zabbix"
+depends          "t3-mysql"
 depends          "site-statustypo3org", "~> 0.1.0"
 
 depends          "database",  "= 1.3.12"
