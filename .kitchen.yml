@@ -20,8 +20,3 @@ suites:
   - name: default
     run_list:
       - recipe[site-monitoringtypo3org::default]
-    attributes:
-      site-statustypo3org:
-        api:
-          username: test
-          password: test

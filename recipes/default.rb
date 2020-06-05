@@ -31,5 +31,3 @@ include_recipe "t3-mysql::backup"
 include_recipe "zabbix::default"
 include_recipe "t3-zabbix::server"
 include_recipe "t3-zabbix::partition"
-
-include_recipe "site-statustypo3org"

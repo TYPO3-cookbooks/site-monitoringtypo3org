@@ -9,7 +9,6 @@ depends          "t3-base",   "~> 0.2.66"
 
 depends          "t3-zabbix", "~> 1.0.0"
 depends          "t3-mysql",  "~> 0.1.0"
-depends          "site-statustypo3org", "~> 0.1.0"
 
 depends          "database",  "= 1.3.12"
 depends          "php",       "= 5.1.0"
